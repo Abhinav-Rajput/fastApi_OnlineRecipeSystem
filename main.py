@@ -16,9 +16,9 @@ online recipe platform.""",
     docs_url="/",
 )
 
-def create_login(id:UUID, username: str, password:str, type: UserType):
-    account = {"id": id, "username": username, "password": password, "type": type}
-    return account
+# def create_login(id:UUID, username: str, password:str, type: UserType):
+#     account = {"id": id, "username": username, "password": password, "type": type}
+#     return account
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8004, reload=True)
